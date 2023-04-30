@@ -1,0 +1,21 @@
+.main {
+  background-image: url("../assets/bg1.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
+
+
+.hello {
+  background-image: url("../assets/bg1.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+}

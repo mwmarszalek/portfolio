@@ -1,16 +1,9 @@
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import React from 'react'
 
 const About = () => {
-
-
-    return (
-        <>
-        <NavBar />
-        <h1>About me</h1>
-        <Footer />
-        </>
-    )
+  return (
+    <div>About</div>
+  )
 }
 
-export default About;
+export default About
