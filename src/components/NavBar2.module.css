@@ -1,0 +1,29 @@
+.navContainer {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  height: 8vh;
+
+
+}
+
+.navLinks {
+  display: flex;
+  gap: 2em;
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+  font-family: "Lobster", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Rowdies", cursive;
+  font-family: "Unbounded", cursive;
+}
+
+.navLogoImg {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}

@@ -1,0 +1,11 @@
+.aboutContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    gap: 10em;
+}
+
+.aboutMeParagraph {
+   width: 60%;
+}

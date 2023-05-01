@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
+import styles from './ProjectsElement.module.css'
 
 const ProjectsElement = ({ projects, frontBack }) => {
   return (
-    <ul>
+    <ul className={styles.projectsContainer}>
       {projects.map((project) => (
-        <li key={project.name}>
-          <h2>{project.name}</h2>
-          <ul>
+        <li key={Math.random()} className={styles.listElementProjects}>
+          <h2>{project.name}</h2>  
             <li>
               <strong>Description: </strong>
               {project.description}
@@ -33,8 +33,8 @@ const ProjectsElement = ({ projects, frontBack }) => {
                   src={`https://www.youtube.com/embed/${project.videoUrl
                     .split("/")
                     .pop()}?proxy=true`}
-                  width="560"
-                  height="315"
+                  width="260"
+                  height="215"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
@@ -47,7 +47,7 @@ const ProjectsElement = ({ projects, frontBack }) => {
             ) : (
               ""
             )}
-          </ul>
+
         </li>
       ))}
     </ul>
