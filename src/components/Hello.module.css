@@ -12,10 +12,10 @@
   text-align: center;
 }
 
-img {
+/* img {
     width: 15rem;
     height: 15rem;
-}
+} */
 
 button {
   --glow-color: rgb(217, 176, 255);

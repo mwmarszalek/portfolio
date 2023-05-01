@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/logoBig.png";
 import { Navbar, Nav } from "react-bootstrap";
+
 
 const navbarLinksStyle = {
   fontSize: "25px",
@@ -10,20 +11,45 @@ const navbarLinksStyle = {
   gap: "1em",
 };
 
-const navbarStyle = {
-    background: 'linear-gradient(to bottom, #410093, #8F38AC)',
-    opacity: '0.9'
-  };
-
-
-const NavBar3 = ({
+const NavBar = ({
   scrollToAbout,
   scrollToProjects,
   scrollToStack,
   scrollToContact,
 }) => {
+  const [isTransparent, setIsTransparent] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      const windowHeight = window.innerHeight;
+      const threshold = windowHeight * 0.15; 
+
+      if (scrollTop > threshold) {
+        setIsTransparent(false);
+      } else {
+        setIsTransparent(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar style={navbarStyle} variant="dark" sticky="top" expand="md">
+    <Navbar
+      className={isTransparent ? "navbar-transparent" : ""}
+      variant="dark"
+      sticky="top"
+      expand="md"
+      style={{
+        transition: "background-color 0.3s ease-in-out",
+        backgroundColor: isTransparent ? "#8F38AC" : "transparent",
+        opacity: isTransparent ? 0.9 : 1,
+      }}
+    >
       <Navbar.Brand href="/" style={{ maxHeight: "5vh" }}>
         <img
           src={logo}
@@ -32,12 +58,14 @@ const NavBar3 = ({
             height: "8rem",
             objectFit: "cover",
             marginTop: "-3rem",
-          }} 
+          }}
           className="d-inline-block align-top"
           alt="React Bootstrap logo"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav">
+      
+      </Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto" style={navbarLinksStyle}>
           <Nav.Link onClick={scrollToAbout}>About</Nav.Link>
@@ -50,4 +78,4 @@ const NavBar3 = ({
   );
 };
 
-export default NavBar3;
+export default NavBar;

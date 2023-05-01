@@ -30,7 +30,7 @@ const Hello = ({ onClick }) => {
 
   return (
     <div className={styles.hello}>
-        <img src={logoBig} />
+        <img style={{width: '15rem', height: '15rem'}} src={logoBig} />
       <div className={styles.typed}>
         <span ref={greeting} />
       </div>

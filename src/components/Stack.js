@@ -4,9 +4,18 @@ import styles from "./Stack.module.css";
 const Stack = () => {
   return (
     <div className={styles.stackContainer}>
-      <h1 style={{ textAlign: "center", marginBottom: '10vh', fontSize:"50px", fontWeight:'bolder' }}>Currently using:</h1>
+      <h1
+        style={{
+          textAlign: "center",
+          marginBottom: "10vh",
+          fontSize: "50px",
+          fontWeight: "bolder",
+        }}
+      >
+        Currently using:
+      </h1>
       <span className={styles.stackGrid}>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="stack" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />{" "}
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
@@ -20,10 +29,8 @@ const Stack = () => {
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />{" "}
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
         <img src="https://user-images.githubusercontent.com/108957679/221864279-fa907251-bad8-465a-b682-537dc92940dc.png" />
-        <h1 style={{ textAlign: "center" }}>
-          Learning: ADD LOADING ANIMATION HERE!!!
-        </h1>
       </span>
+    
     </div>
   );
 };
