@@ -1,5 +1,9 @@
 import React from "react";
 import styles from "./Contact.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 
 const Contact = () => {
   return (
@@ -13,21 +17,21 @@ const Contact = () => {
       </div>
       <div className={styles.body}>
         <p className={styles.text}>
-        $  You can reach me at{" "}
+        $  Drop me an e-mail ✉️ {" "}
           <a href="mailto:mw.marszalek@outlook.com" className={styles.link}>
             mwmarszalek@outlook.com
           </a>
         </p>
         <p className={styles.text}>
-          $  My GitHub profile is{" "}
+          $  My GitHub <FontAwesomeIcon icon={faGithub}/>  profile is{" "}
           <a href="https://github.com/mwmarszalek" className={styles.link}>
-            https://github.com/marszalek
+            https://github.com/marszalek 
           </a>
         </p>
         <p className={styles.text}>
-          $  You can connect with me on LinkedIn at{" "}
+          $  Connect with me on LinkedIn <FontAwesomeIcon icon={faLinkedin}/>{" "}
           <a href="https://www.linkedin.com/in/mwmarszalek/" className={styles.link}>
-          https://www.linkedin.com/in/mwmarszalek
+          https://www.linkedin.com/in/mwmarszalek 
           </a>
         </p>
       </div>

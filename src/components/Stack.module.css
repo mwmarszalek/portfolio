@@ -3,19 +3,20 @@
     background-color: rgb(77, 2, 77, 0.8);
     padding: 2em;
     height: 100vh;
-    padding-top: 9vh;
+    padding-top: 12vh;
   
 }
 
 .stackContainer > span > img {
-    height: 10em;
-    width: 10em;
+    height: 8em;
+    width: 8em;
 }
 
 .stackGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 1em;
 
 }

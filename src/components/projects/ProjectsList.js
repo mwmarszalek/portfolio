@@ -3,7 +3,7 @@
 import ProjectsElement from "./ProjectsElement";
 import styles from './ProjectsList.module.css'
 
-import NavBar from "../NavBar";
+import NavBar from "../../deprecated/NavBar";
 import { Fragment } from "react";
 
 
