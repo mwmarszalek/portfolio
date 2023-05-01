@@ -1,0 +1,21 @@
+.stackContainer {
+    
+    background-color: rgb(77, 2, 77, 0.8);
+    padding: 2em;
+    height: 100vh;
+    padding-top: 9vh;
+  
+}
+
+.stackContainer > span > img {
+    height: 10em;
+    width: 10em;
+}
+
+.stackGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+
+}

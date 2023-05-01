@@ -5,12 +5,19 @@
   align-items: center;
   padding: 1em;
   height: 8vh;
-
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1;
 }
 
 .navLinks {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2em;
   font-size: 25px;
   font-weight: bolder;
@@ -22,8 +29,25 @@
   font-family: "Unbounded", cursive;
 }
 
+.navLinks a {
+  display: block;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+}
+
 .navLogoImg {
   width: 8rem;
   height: 8rem;
   object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .navLinks {
+    flex-direction: row;
+  }
+
+  .navLinks a {
+    padding: 0.5em;
+  }
 }

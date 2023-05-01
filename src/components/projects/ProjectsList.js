@@ -42,7 +42,6 @@ const Projects = () => {
       <Fragment>
         <ProjectsElement
           projects={DUMMY_PROJECTS}
-          frontBack={["front-end", "back-end"]}
         />
       </Fragment>
   );

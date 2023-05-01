@@ -1,0 +1,73 @@
+.contactContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.terminal {
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    font-family: monospace;
+    opacity: 0.8;
+
+  }
+  
+  .header {
+    background-color: #383838;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding-left: 10px;
+  }
+  
+  .close,
+  .minimize,
+  .maximize {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .close {
+    background-color: #ff5f56;
+  }
+  
+  .minimize {
+    background-color: #ffbd2e;
+  }
+  
+  .maximize {
+    background-color: #27c93f;
+  }
+  
+  .title {
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-right: auto;
+  }
+  
+  .body {
+    background-color: #1c1c1c;
+    padding: 20px;
+  }
+  
+  .text {
+    margin: 0;
+    line-height: 1.5;
+    color: white;
+  }
+  
+  .link {
+    color: #4b9fff;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
