@@ -44,7 +44,7 @@ const About = () => {
           valuable asset to their company.
         </p>
         <h3>
-          <strong>Any takers?</strong>
+          <strong>Any takers? 🤓</strong>
         </h3>
       </div>
     </div>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import logo from "../assets/logoBig.png";
 import { Navbar, Nav } from "react-bootstrap";
 
-
 const navbarLinksStyle = {
   fontSize: "25px",
   fontWeight: "bolder",
@@ -18,6 +17,7 @@ const NavBar = ({
   scrollToContact,
 }) => {
   const [isTransparent, setIsTransparent] = useState(true);
+  const [activeLink, setActiveLink] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +37,10 @@ const NavBar = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
 
   return (
     <Navbar
@@ -69,10 +73,42 @@ const NavBar = ({
       </Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto" style={navbarLinksStyle}>
-          <Nav.Link onClick={scrollToAbout}>About</Nav.Link>
-          <Nav.Link onClick={scrollToProjects}>Projects</Nav.Link>
-          <Nav.Link onClick={scrollToStack}>Stack</Nav.Link>
-          <Nav.Link onClick={scrollToContact}>Contact</Nav.Link>
+          <Nav.Link
+            onClick={() => {
+              handleLinkClick("about");
+              scrollToAbout();
+            }}
+            className={activeLink === "about" ? "active" : ""}
+          >
+            About
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => {
+              handleLinkClick("projects");
+              scrollToProjects();
+            }}
+            className={activeLink === "projects" ? "active" : ""}
+          >
+            Projects
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => {
+              handleLinkClick("stack");
+              scrollToStack();
+            }}
+            className={activeLink === "stack" ? "active" : ""}
+          >
+            Stack
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => {
+              handleLinkClick("contact");
+              scrollToContact();
+            }}
+            className={activeLink === "contact" ? "active" : ""}
+          >
+            Contact
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

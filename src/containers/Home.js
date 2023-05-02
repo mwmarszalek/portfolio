@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect, useRef } from "react";
 import styles from "./Home.module.css";
 
 import NavBar3 from "../components/NavBar3";
@@ -15,16 +15,23 @@ const Home = () => {
     setFirstLoad(false);
   };
 
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    if (!firstLoad && aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [firstLoad]);
+
   const scrollToRef = (ref) => {
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  const aboutRef = React.createRef();
-  const projectsRef = React.createRef();
-  const stackRef = React.createRef();
-  const contactRef = React.createRef();
+  const projectsRef = useRef(null);
+  const stackRef = useRef(null);
+  const contactRef = useRef(null);
 
   return (
     <div className={firstLoad ? `${styles.hello}` : `${styles.main}`}>
@@ -37,7 +44,7 @@ const Home = () => {
             scrollToStack={() => scrollToRef(stackRef)}
             scrollToContact={() => scrollToRef(contactRef)}
           />
-          <div ref={aboutRef}>
+          <div ref={aboutRef} id="home">
             <About />
           </div>
           <div ref={projectsRef}>
@@ -56,3 +63,4 @@ const Home = () => {
 };
 
 export default Home;
+

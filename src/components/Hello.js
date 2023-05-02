@@ -12,7 +12,7 @@ const Hello = ({ onClick }) => {
       strings: [
         `<b>Hello, I'm Michal :-) &#128075;</b>`,
         `<b>Software Developer &nbsp &#128187;</b>`,
-        `<b>Make yourself at home &#129299;</b>`,
+        // `<b>Make yourself at home &#129299;</b>`,
       ],
       typeSpeed: 50,
 

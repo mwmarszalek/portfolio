@@ -3,6 +3,8 @@ import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import macrosImage from '../../assets/macrosTitlePlay.jpeg'
+import beeImage from '../../assets/beeCarefulTitlePlay.jpeg'
 
 const ProjectsElement2 = ({ projects }) => {
   return (
@@ -15,7 +17,7 @@ const ProjectsElement2 = ({ projects }) => {
             style={{ width: "18rem", backgroundColor: "#212529", color: "white", margin:'1em' }}
           >
             {project.imgUrl ? (
-              <Card.Img variant="top" src={project.imgUrl} />
+              <Card.Img variant="top" src={projects.imgUrl} />
             ) : (
               <div
                 style={{
