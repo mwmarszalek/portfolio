@@ -27,9 +27,7 @@ const DUMMY_PROJECTS = [
   },
   {
     name: "Earth Trekker",
-    videoUrl: "",
-    imgUrl:
-      "https://user-images.githubusercontent.com/103493837/235325988-9ec7a23b-b05b-4e9a-bdd8-fe0b2c5e4d31.png",
+    videoUrl: "https://youtu.be/QjBFCylOwjE",
     link1: "https://github.com/mwmarszalek/EarthTrekker",
     link2: "",
     description:
