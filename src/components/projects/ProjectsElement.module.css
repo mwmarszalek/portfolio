@@ -5,15 +5,20 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+
    }
+
+   
 
 .listElementProjects {
     flex-basis: 33%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 1em;
+}
+
+.listElementProjects:last-child {
+  margin-bottom: 6vh;
 }
 
 
@@ -31,7 +36,9 @@ li >img {
   
 }
 
-
+#imagesGroup {
+  width: 100em;
+}
 
 
 

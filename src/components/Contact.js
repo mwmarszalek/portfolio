@@ -17,7 +17,7 @@ const Contact = () => {
       </div>
       <div className={styles.body}>
         <p className={styles.text}>
-        $  Drop me an e-mail ✉️ {" "}
+        $  Drop me an e-mail<span className={styles['blinking-cursor']}>|</span> ✉️  {" "}
           <a href="mailto:mw.marszalek@outlook.com" className={styles.link}>
             mwmarszalek@outlook.com
           </a>

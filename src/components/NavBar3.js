@@ -48,9 +48,10 @@ const NavBar = ({
         transition: "background-color 0.3s ease-in-out",
         backgroundColor: isTransparent ? "#8F38AC" : "transparent",
         opacity: isTransparent ? 0.9 : 1,
+        height: '10vh'
       }}
     >
-      <Navbar.Brand href="/" style={{ maxHeight: "5vh" }}>
+      <Navbar.Brand href="/" style={{ maxHeight: "8vh" }}>
         <img
           src={logo}
           style={{

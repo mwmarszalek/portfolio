@@ -72,3 +72,18 @@
     text-decoration: underline;
   }
   
+
+  .blinking-cursor {
+    display: inline-block;
+    vertical-align: middle;
+    animation: blink .75s infinite alternate;
+  }
+  
+  @keyframes blink {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }

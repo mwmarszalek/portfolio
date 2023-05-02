@@ -1,6 +1,5 @@
 
-
-import ProjectsElement from "./ProjectsElement";
+import ProjectsElement2 from "./ProjectsElement2";
 import styles from './ProjectsList.module.css'
 
 import NavBar from "../../deprecated/NavBar";
@@ -40,7 +39,7 @@ const DUMMY_PROJECTS = [
 const Projects = () => {
   return (
       <Fragment>
-        <ProjectsElement
+        <ProjectsElement2
           projects={DUMMY_PROJECTS}
         />
       </Fragment>

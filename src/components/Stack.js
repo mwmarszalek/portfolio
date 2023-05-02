@@ -7,15 +7,18 @@ const Stack = () => {
       <h1
         style={{
           textAlign: "center",
-          marginBottom: "10vh",
-          fontSize: "50px",
+          marginBottom: "5vh",
+          fontSize: "45px",
           fontWeight: "bolder",
         }}
       >
         Currently using:
       </h1>
       <span className={styles.stackGrid}>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="stack" />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+          alt="stack"
+        />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />{" "}
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
@@ -30,7 +33,43 @@ const Stack = () => {
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
         <img src="https://user-images.githubusercontent.com/108957679/221864279-fa907251-bad8-465a-b682-537dc92940dc.png" />
       </span>
-    
+      <hr></hr>
+      <div className={styles.spinnerContainer}>
+        <div className={styles.spinner}></div>
+        <div className={styles.loader}>
+          <h1 style={{ color: "white", fontSize: "50px" }}>
+            Currently learning:{" "}
+          </h1> &nbsp;
+          <div className={styles.words}>
+            <span className={styles.word}></span>
+            <span className={styles.word}>
+              C#&nbsp;
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                height="50"
+              />
+            </span>
+            <span className={styles.word}>React Native <img
+                src="https://cdn.worldvectorlogo.com/logos/react-native-1.svg"
+                height="37"
+              /> </span>
+            <span className={styles.word}>
+              AWS &nbsp;
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+                height="50"
+              />
+            </span>
+            <span className={styles.word}>
+              Docker &nbsp;
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                height="50"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

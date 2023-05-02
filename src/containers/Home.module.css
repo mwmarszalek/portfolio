@@ -5,7 +5,7 @@
   background-size: cover;
   color: white;
   height: 100%;
-  
+  font-family: "Poppins",sans-serif;
   
 }
 
@@ -19,5 +19,5 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  
+  font-family: "Poppins",sans-serif;
 }

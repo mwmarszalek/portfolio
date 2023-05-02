@@ -38,7 +38,7 @@ const ProjectsElement = ({ projects}) => {
           <li style={{textAlign: 'center'}}>{project.description}</li>
 
           {project.videoUrl && (
-            <li style={{textAlign: 'center'}}>
+            <li style={{textAlign: 'center'}}  >
               <iframe
                 src={`https://www.youtube.com/embed/${project.videoUrl
                   .split("/")
@@ -47,13 +47,13 @@ const ProjectsElement = ({ projects}) => {
                 height="215"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-               
+                id="imagesGroup"
               />
             </li>
           )}
           {project.imgUrl ? (
             <li>
-              <img src={project.imgUrl} />
+              <img src={project.imgUrl} id="imagesGroup" />
             </li>
           ) : (
             ""
