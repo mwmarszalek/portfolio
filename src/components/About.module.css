@@ -5,6 +5,7 @@
     justify-content: center;
     padding-top: 14vh;
     flex-wrap: wrap;
+    font-size: 1.1rem;
 }
 
 
@@ -13,13 +14,15 @@
     flex-direction: column;
     height: 30vh;
     width: 50em;
+    padding-top:1em
+
 }
 
 .pictureContainer {
     display: flex;
     flex-direction: column;
     gap:10vh;
-    margin-top: 2vh;
+    margin-top: 8vh;
     margin-right: 2em;
     
 }
@@ -47,4 +50,31 @@
       
     }
   }
+
+
+
+
+  /* @media () {
+    .aboutContainer {
+      height: auto;
+      width: auto;
+      padding: 1em;
+  
+    }
+    
+    .bioCard {
+      width: auto;
+      height: auto;
+      padding-top: 1em;
+      display: flex;
+
+    }
+    
+    .pictureContainer {
+      margin: 0;
+      gap: 2vh;
+    
+      
+    }
+  } */
 

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import { Card, Container } from "react-bootstrap";
 import styles from "./About.module.css";
 import picture1 from "../assets/codeImage1.svg";
@@ -8,8 +8,7 @@ import picture4 from "../assets/codeImage4.svg";
 
 const About = () => {
 
-
-
+  
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.pictureContainer}>
@@ -22,17 +21,17 @@ const About = () => {
         <h1>Hey, I'm Michal! ✌️</h1>
         <p>
           Born in Szczecin, Poland (willing to give $5 to the person who can
-          pronounce it right). After graduating in Social Statistics, I moved to
+          pronounce it right). After graduating in <b>Social Statistics</b>, I moved to
           the UK, and this year (2023) marks my 14th anniversary of living in{" "}
           <strong>Glasgow! 🎉 🏴󠁧󠁢󠁳󠁣󠁴󠁿</strong>
         </p>
         <p>
           For the last four years, I've been working in the automotive industry,
-          dealing with data using Excel and PowerBi. Sadly, there's only so much
+          dealing with data using <b>Excel and PowerBi.</b> Sadly, there's only so much
           you can do with Excel, so I started digging deeper.
         </p>
         <p>
-          This is where coding came in. I fell in love with Python 🐍, quit my
+          This is where coding came in. I fell in love❤️ with Python 🐍, quit my
           day job, and committed myself to teaching myself how to code while
           working part-time as a delivery driver (apparently, you need at least
           one source of income to buy stuff and survive 😉).

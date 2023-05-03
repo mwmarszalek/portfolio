@@ -89,10 +89,10 @@
   }
 
 
-  /* @media (max-width: 767px) {
+  @media (max-width: 767px) {
     .contactContainer {
-      height: auto;
-      width: auto;
+    font-size: .90rem;
+    
     }
     
-  } */
+  }

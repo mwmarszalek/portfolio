@@ -118,7 +118,7 @@ const ProjectsElement2 = ({ projects }) => {
 
   return (
     <div className={styles.projectContainer}>
-      <h1 style={{fontWeight: 'bolder', fontSize: '45px',textAlign: 'center',textDecoration: 'underline'}}>my work:</h1>
+      {/* <h1 style={{fontWeight: 'bolder', fontSize: '45px',textAlign: 'center',textDecoration: 'underline'}}>my work:</h1> */}
       <div className="d-flex flex-wrap justify-content-around">
         {projects.map((project) => (
           <Card

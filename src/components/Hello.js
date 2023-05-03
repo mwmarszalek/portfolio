@@ -1,25 +1,27 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import Typed from "typed.js";
 import styles from "./Hello.module.css";
-import logoBig from '../assets/logoBig.png'
+import logoBig from "../assets/logoBig.png";
 
 const Hello = ({ onClick }) => {
-  
   const greeting = React.useRef(null);
+  const [buttonVisible, setButtonVisible] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const typed = new Typed(greeting.current, {
       strings: [
-        `<b>Hello, I'm Michal :-) &#128075;</b>`,
-        `<b>Software Developer &nbsp &#128187;</b>`,
+        `<b>Hello, I'm Michal :-) &#128075;</b><br /><b>Software Developer &nbsp &#128187;</b>`,
         // `<b>Make yourself at home &#129299;</b>`,
       ],
       typeSpeed: 50,
-
+      onComplete: () => {
+        setTimeout(() => {
+          setButtonVisible(true);
+        }, 700);
+      },
     });
 
     return () => {
-
       typed.destroy();
     };
   }, []);
@@ -30,12 +32,20 @@ const Hello = ({ onClick }) => {
 
   return (
     <div className={styles.hello}>
-        <img style={{width: '15rem', height: '15rem'}} src={logoBig} />
+      <img style={{ width: "15rem", height: "15rem" }} src={logoBig} />
       <div className={styles.typed}>
         <span ref={greeting} />
       </div>
-      <button onClick={handleClick}>Get to know me!</button>
+      {buttonVisible && (
+        <button
+          className={`${styles.btnHello} ${styles.glow}`}
+          onClick={handleClick}
+        >
+          Get to know me!
+        </button>
+      )}
     </div>
   );
 };
+
 export default Hello;
