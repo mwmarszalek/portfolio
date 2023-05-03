@@ -3,8 +3,8 @@ import logo from "../assets/logoBig.png";
 import { Navbar, Nav } from "react-bootstrap";
 
 const navbarLinksStyle = {
-  fontSize: "25px",
-  fontWeight: "bolder",
+  fontSize: "1.5rem",
+  fontWeight: 'bold',
   marginRight: "1em",
   display: "flex",
   gap: "1em",
@@ -50,7 +50,7 @@ const NavBar = ({
       expand="md"
       style={{
         transition: "background-color 0.3s ease-in-out",
-        backgroundColor: isTransparent ? "#8F38AC" : "transparent",
+        backgroundColor: isTransparent ? "#8B048Bcc" : "transparent",
         opacity: isTransparent ? 0.9 : 1,
         height: '10vh'
       }}

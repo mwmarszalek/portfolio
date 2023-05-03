@@ -28,5 +28,24 @@
   transition: transform 0.2s ease-in;
 }
 
+.projectContainer {
+  background-color: yellow;
+}
 
 
+@media (max-width: 767px) {
+  .aboutContainer {
+    height: auto;
+  }
+  
+  .bioCard {
+    width: auto;
+    height: auto;
+  }
+  
+  .pictureContainer {
+    margin: 0;
+    gap: 2vh;
+    justify-content: center;
+  }
+}

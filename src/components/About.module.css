@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     padding-top: 14vh;
+    flex-wrap: wrap;
 }
 
 
@@ -20,4 +21,23 @@
     gap:10vh;
     margin-top: 2vh;
     margin-right: 2em;
+    
 }
+
+@media (max-width: 767px) {
+    .aboutContainer {
+      height: auto;
+    }
+    
+    .bioCard {
+      width: auto;
+      height: auto;
+    }
+    
+    .pictureContainer {
+      margin: 0;
+      gap: 2vh;
+      justify-content: center;
+    }
+  }
+

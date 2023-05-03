@@ -122,7 +122,7 @@ const ProjectsElement2 = ({ projects }) => {
 
   return (
     <div
-      className="d-flex flex-wrap justify-content-center align-items-center"
+      className="d-flex flex-wrap justify-content-center align-items-center projectContainer"
       style={{ height: "100vh", overflow: "auto", paddingTop: '5vh' }}
     >
       <div className="d-flex flex-wrap justify-content-around">
@@ -131,7 +131,7 @@ const ProjectsElement2 = ({ projects }) => {
             key={project.id}
             className="mb-4"
             style={{
-              width: "18rem",
+              width: "20rem",
               backgroundColor: "#212529",
               color: "white",
               margin: "1em",
