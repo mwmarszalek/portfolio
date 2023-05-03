@@ -3,7 +3,7 @@ import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import macrosImage from "../../assets/macrosTitlePlay.jpeg";
-import beeImage from "../../assets/beeCarefulTitlePlay.jpeg";
+import beeImage from '../../assets/beeCarefulTitlePlay.jpeg';
 import earthImage from "../../assets/earthTrekkerTitlePlay.jpeg";
 import styles from "./ProjectsElement.module.css";
 

@@ -21,3 +21,13 @@
   justify-content: center;
   font-family: "Poppins",sans-serif;
 }
+
+
+@media (max-width: 767px) {
+  .main {
+    background-image: url("../assets/bg1.png");
+    background-repeat: repeat;
+    background-size: contain;
+    height: auto;
+  }
+}
