@@ -27,6 +27,6 @@
   .main {
     
     /* background: transparent url("../assets/bg1 copy.png") no-repeat scroll 0% 0% / cover; */
-    background-attachment: scroll;
+    background-attachment: initial;
   }
 }
