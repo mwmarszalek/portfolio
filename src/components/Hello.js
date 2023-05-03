@@ -1,10 +1,10 @@
-import React, { Fragment, useState, useEffect } from "react";
-import Typed from "typed.js";
+import React, { Fragment, useState, useEffect, useRef } from "react";
 import styles from "./Hello.module.css";
 import logoBig from "../assets/logoBig.png";
+import Typed from 'typed.js';
 
 const Hello = ({ onClick }) => {
-  const greeting = React.useRef(null);
+  const greeting = useRef(null);
   const [buttonVisible, setButtonVisible] = useState(false);
 
   useEffect(() => {
