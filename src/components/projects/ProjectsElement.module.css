@@ -1,35 +1,32 @@
-.projectsContainer {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-   }
 
-   
+.buttonCode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  font-size: .8rem;
+  transform: translateY(0);
+  transition: transform 0.2s ease-out;
+}
 
-.listElementProjects {
-    flex-basis: 33%;
-    display: flex;
-    flex-direction: column;
-   
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  font-size: .8rem;
+  transform: translateY(0);
+  transition: transform 0.2s ease-out;
+}
+
+.button:hover, .buttonCode:hover {
+  transform: translateY(-3px);
+}
+
+.button:active, .buttonCode.active {
+  transform: translateY(-6px);
+  transition: transform 0.2s ease-in;
 }
 
 
-
-.projectTitleGit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .8em;
-}
-
-
-li >img {
-    width: 20em;
-    height: 11em;
-  
-}
 

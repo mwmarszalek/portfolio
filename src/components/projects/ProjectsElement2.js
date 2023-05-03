@@ -5,6 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import macrosImage from "../../assets/macrosTitlePlay.jpeg";
 import beeImage from "../../assets/beeCarefulTitlePlay.jpeg";
 import earthImage from "../../assets/earthTrekkerTitlePlay.jpeg";
+import styles from './ProjectsElement.module.css'
 
 const ProjectsElement2 = ({ projects }) => {
   const macrosStack = (
@@ -172,11 +173,11 @@ const ProjectsElement2 = ({ projects }) => {
                 <div style={{fontSize: '.8rem'}}>{project.description}</div>
                
                 {project.name === "macrOS" ? (
-              <>{macrosStack}</>
+              <div style={{paddingBottom: '1rem'}}>{macrosStack}</div>
             ) : project.name === "beeCareful" ? (
-              <>{beecarefulStack}</>
+              <div style={{paddingBottom: '2rem'}}>{beecarefulStack}</div>
             ) : project.name === "Earth Trekker" ? (
-              <>{earthtrekkerStack}</>
+              <div style={{paddingBottom: '3rem'}}>{earthtrekkerStack}</div>
             ) : (
               <div
                 style={{
@@ -191,15 +192,15 @@ const ProjectsElement2 = ({ projects }) => {
             )}
               </Card.Text>
               <div className="d-flex justify-content-center align-items-center">
-                <Button variant="primary" href={project.link1} target="_blank">
+                <Button variant="primary" href={project.link1} target="_blank" style={{backgroundColor: "#8F38AC", borderColor: 'grey', fontWeight: 'bolder'}} >
                   {project.name === "macrOS" ? (
-                    <>
+                    <div className={styles.button}>
                       Front-end: <FontAwesomeIcon icon={faGithub} />
-                    </>
+                    </div>
                   ) : (
-                    <>
+                    <div className={styles.buttonCode}>
                       Code: <FontAwesomeIcon icon={faGithub} />{" "}
-                    </>
+                    </div>
                   )}
                 </Button>
                 {project.link2 && (
@@ -207,8 +208,11 @@ const ProjectsElement2 = ({ projects }) => {
                     variant="primary"
                     href={project.link2}
                     target="_blank"
+                    style={{marginLeft: "1rem", backgroundColor: "#8F38AC", borderColor: 'grey', fontWeight: 'bolder'}}
                   >
-                    Back-end <FontAwesomeIcon icon={faGithub} />
+                    <div className={styles.button} >
+                   Back-end <FontAwesomeIcon icon={faGithub} />
+                    </div>
                   </Button>
                 )}
               </div>
