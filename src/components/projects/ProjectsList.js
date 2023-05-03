@@ -15,7 +15,7 @@ const DUMMY_PROJECTS = [
     link2: "https://github.com/mwmarszalek/MacrOS_backend",
     description:
       `
-      macrOS is a cool app for tracking calories and nutrition goals. Built with React, Bootstrap`,
+      MacrOS is the ultimate calorie tracking app, developed by a team where I worked on both front and back-end development. Our beta testers, including a former professional rugby player, love our intuitive design and user-friendly interface. App uses open food API `,
   },
   {
     name: "beeCareful",
@@ -23,7 +23,7 @@ const DUMMY_PROJECTS = [
     link1: "https://github.com/mwmarszalek/BeeCareful",
     link2: "",
     description:
-      "Beecareful is a full-stack app for beehive management. It allows users to track daily inspections, hive health, bee colonies and weather (using external API).",
+      "Beecareful is an app for beekeepers to track hive health, colony status, and weather conditions. Developed as a team project, I worked on front-end and led the design of the user interface. App uses external weather API.",
   },
   {
     name: "Earth Trekker",
@@ -31,7 +31,7 @@ const DUMMY_PROJECTS = [
     link1: "https://github.com/mwmarszalek/EarthTrekker",
     link2: "",
     description:
-      "Earth Trekker is my first full-stack CRUD app developed solo over 5 days in Python with Flask and a PostgreSQL database",
+      `Earth Trekker is a travel app for tracking countries and cities you've visited or plan to visit. I developed it solo, using my own travel experience to design the functionality and user interface.`,
   },
 ];
 
