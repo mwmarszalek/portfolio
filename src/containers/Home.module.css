@@ -25,7 +25,8 @@
 
 @media (max-width: 767px) {
   .main {
-    /* background-image: url("../assets/bg1 copy.png"); */
-    background: transparent url("../assets/bg1 copy.png") no-repeat scroll 0% 0% / cover;
+    
+    /* background: transparent url("../assets/bg1 copy.png") no-repeat scroll 0% 0% / cover; */
+    background-attachment: scroll;
   }
 }
