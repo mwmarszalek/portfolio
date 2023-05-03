@@ -7,7 +7,7 @@
 
 }
 
-.stackContainer > span > img {
+.stackGrid > img {
     height: 6em;
     width: 6em;
 }
@@ -137,18 +137,13 @@
 
 
 @media (max-width: 767px) {
-  .loader {
-    height: auto;
-    width: auto;
-    font-size: 1.5em;
-  }
   .stackContainer > span > img {
-    height: 4em;
-    width: 4em;
+    height: 2.5em;
+    width: 2.5em;
 }
 
-.word {
-  height: 50vh;
-}
+
+
+
  
 }

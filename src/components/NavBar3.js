@@ -80,7 +80,7 @@ const NavBar = ({
             }}
             className={activeLink === "about" ? "active" : ""}
           >
-            About
+            about
           </Nav.Link>
           <Nav.Link
             onClick={() => {
@@ -89,7 +89,7 @@ const NavBar = ({
             }}
             className={activeLink === "projects" ? "active" : ""}
           >
-            Projects
+            projects
           </Nav.Link>
           <Nav.Link
             onClick={() => {
@@ -98,7 +98,7 @@ const NavBar = ({
             }}
             className={activeLink === "stack" ? "active" : ""}
           >
-            Stack
+            stack
           </Nav.Link>
           <Nav.Link
             onClick={() => {
@@ -107,7 +107,7 @@ const NavBar = ({
             }}
             className={activeLink === "contact" ? "active" : ""}
           >
-            Contact
+            contact
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

@@ -1,7 +1,21 @@
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
 import styles from "./Stack.module.css";
 
 const Stack = () => {
+
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
 
 
@@ -35,7 +49,19 @@ const Stack = () => {
         <img src="https://user-images.githubusercontent.com/108957679/221864279-fa907251-bad8-465a-b682-537dc92940dc.png" />
       </span>
       <hr></hr>
-      <div className={styles.spinnerContainer}>
+       <div>
+      {isMobile ? (
+        <div>
+          <h1 style={{textAlign: 'center'}}>Currently learning:</h1> &nbsp;
+          <span className={styles.stackGrid}>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
+          <img src="https://cdn.worldvectorlogo.com/logos/react-native-1.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+          </span>
+        </div>
+      ) : (
+        <div className={styles.spinnerContainer}>
         <div className={styles.spinner}></div>
         <div className={styles.loader}>
           <h1 style={{ color: "white", fontSize: "50px" }}>
@@ -71,6 +97,10 @@ const Stack = () => {
           </div>
         </div>
       </div>
+      )}
+    </div>
+
+
     </div>
   );
 };

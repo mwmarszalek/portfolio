@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Card, Container } from "react-bootstrap";
 import styles from "./About.module.css";
 import picture1 from "../assets/codeImage1.svg";
@@ -7,6 +7,9 @@ import picture3 from "../assets/codeImage3.svg";
 import picture4 from "../assets/codeImage4.svg";
 
 const About = () => {
+
+
+
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.pictureContainer}>

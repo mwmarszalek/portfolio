@@ -28,22 +28,23 @@
     .aboutContainer {
       height: auto;
       width: auto;
-      margin-left: 1.2rem;
+      padding: 1em;
+  
     }
     
     .bioCard {
       width: auto;
       height: auto;
-      padding-left: 1em;
-      padding-right: 1em;
       padding-top: 1em;
+      display: flex;
+
     }
     
     .pictureContainer {
       margin: 0;
       gap: 2vh;
-      justify-content: center;
     
+      
     }
   }
 

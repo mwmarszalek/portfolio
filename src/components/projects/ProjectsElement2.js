@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import macrosImage from "../../assets/macrosTitlePlay.jpeg";
 import beeImage from "../../assets/beeCarefulTitlePlay.jpeg";
 import earthImage from "../../assets/earthTrekkerTitlePlay.jpeg";
-import styles from './ProjectsElement.module.css'
+import styles from "./ProjectsElement.module.css";
 
 const ProjectsElement2 = ({ projects }) => {
   const macrosStack = (
@@ -47,8 +47,6 @@ const ProjectsElement2 = ({ projects }) => {
       />
     </span>
   );
-
-
 
   const beecarefulStack = (
     <span
@@ -118,12 +116,9 @@ const ProjectsElement2 = ({ projects }) => {
     </span>
   );
 
-
-
   return (
-    <div
-      className={styles.projectContainer}
-    >
+    <div className={styles.projectContainer}>
+      <h1 style={{fontWeight: 'bolder', fontSize: '45px',textAlign: 'center',textDecoration: 'underline'}}>my work:</h1>
       <div className="d-flex flex-wrap justify-content-around">
         {projects.map((project) => (
           <Card
@@ -134,16 +129,23 @@ const ProjectsElement2 = ({ projects }) => {
               backgroundColor: "#212529",
               color: "white",
               margin: "1em",
-              
             }}
           >
             {project.name === "macrOS" ? (
               <a href={project.videoUrl} target="_blank">
-                <Card.Img variant="top" src={macrosImage} style={{ height: "30vh" }} />
+                <Card.Img
+                  variant="top"
+                  src={macrosImage}
+                  style={{ height: "30vh" }}
+                />
               </a>
             ) : project.name === "beeCareful" ? (
               <a href={project.videoUrl} target="_blank">
-                <Card.Img variant="top" src={beeImage} style={{ height: "30vh" }} />
+                <Card.Img
+                  variant="top"
+                  src={beeImage}
+                  style={{ height: "30vh" }}
+                />
               </a>
             ) : project.name === "Earth Trekker" ? (
               <a href={project.videoUrl} target="_blank">
@@ -167,38 +169,59 @@ const ProjectsElement2 = ({ projects }) => {
             )}
 
             <Card.Body>
-              <Card.Title ><h3  style={{fontWeight: 'bold', textAlign: 'center', margin:'0'}}>{project.name}</h3></Card.Title>
+              <Card.Title>
+                <h3
+                  style={{
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    margin: "0",
+                  }}
+                >
+                  {project.name}
+                </h3>
+              </Card.Title>
               <Card.Text>
-                <div style={{fontSize: '.8rem'}}>{project.description}</div>
-               
+                <div style={{ fontSize: ".8rem" }}>{project.description}</div>
+
                 {project.name === "macrOS" ? (
-              <div style={{paddingBottom: '1rem'}}>{macrosStack}</div>
-            ) : project.name === "beeCareful" ? (
-              <div style={{paddingBottom: '2rem'}}>{beecarefulStack}</div>
-            ) : project.name === "Earth Trekker" ? (
-              <div style={{paddingBottom: '3rem'}}>{earthtrekkerStack}</div>
-            ) : (
-              <div
-                style={{
-                  height: "10rem",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                No image available
-              </div>
-            )}
+                  <div style={{ paddingBottom: "1rem" }}>{macrosStack}</div>
+                ) : project.name === "beeCareful" ? (
+                  <div style={{ paddingBottom: "2rem" }}>{beecarefulStack}</div>
+                ) : project.name === "Earth Trekker" ? (
+                  <div style={{ paddingBottom: "3rem" }}>
+                    {earthtrekkerStack}
+                  </div>
+                ) : (
+                  <div
+                    style={{
+                      height: "10rem",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    No image available
+                  </div>
+                )}
               </Card.Text>
               <div className="d-flex justify-content-center align-items-center">
-                <Button variant="primary" href={project.link1} target="_blank" style={{backgroundColor: "#8F38AC", borderColor: 'grey', fontWeight: 'bolder'}} >
+                <Button
+                  variant="primary"
+                  href={project.link1}
+                  target="_blank"
+                  style={{
+                    backgroundColor: "#8F38AC",
+                    borderColor: "grey",
+                    fontWeight: "bolder",
+                  }}
+                >
                   {project.name === "macrOS" ? (
                     <div className={styles.button}>
-                      Front-end: <FontAwesomeIcon icon={faGithub} />
+                      front-end: <FontAwesomeIcon icon={faGithub} />
                     </div>
                   ) : (
                     <div className={styles.buttonCode}>
-                      Code: <FontAwesomeIcon icon={faGithub} />{" "}
+                      code: <FontAwesomeIcon icon={faGithub} />{" "}
                     </div>
                   )}
                 </Button>
@@ -207,10 +230,15 @@ const ProjectsElement2 = ({ projects }) => {
                     variant="primary"
                     href={project.link2}
                     target="_blank"
-                    style={{marginLeft: "1rem", backgroundColor: "#8F38AC", borderColor: 'grey', fontWeight: 'bolder'}}
+                    style={{
+                      marginLeft: "1rem",
+                      backgroundColor: "#8F38AC",
+                      borderColor: "grey",
+                      fontWeight: "bolder",
+                    }}
                   >
-                    <div className={styles.button} >
-                   Back-end <FontAwesomeIcon icon={faGithub} />
+                    <div className={styles.button}>
+                      back-end <FontAwesomeIcon icon={faGithub} />
                     </div>
                   </Button>
                 )}
