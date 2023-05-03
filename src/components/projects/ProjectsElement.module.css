@@ -29,23 +29,16 @@
 }
 
 .projectContainer {
-  background-color: yellow;
+  height: 100vh;
+  overflow: auto;
+  padding-top: 10vh;
 }
 
 
 @media (max-width: 767px) {
-  .aboutContainer {
+  .projectContainer {
     height: auto;
-  }
-  
-  .bioCard {
     width: auto;
-    height: auto;
   }
   
-  .pictureContainer {
-    margin: 0;
-    gap: 2vh;
-    justify-content: center;
-  }
 }

@@ -32,8 +32,8 @@
 }
 
 .spinner {
-  width: 56px;
-  height: 56px;
+  width: 3.5rem;
+  height: 3.5rem;
   display: grid;
   border: 4px solid #0000;
   border-radius: 50%;
@@ -45,14 +45,14 @@
 .spinner::after {
   content: "";
   grid-area: 1/1;
-  margin: 2px;
+  margin: 0.125rem;
   border: inherit;
   border-radius: 50%;
   animation: tri-spinner 2s infinite;
 }
 
 .spinner::after {
-  margin: 8px;
+  margin: 0.5rem;
   animation-duration: 3s;
 }
 
@@ -66,7 +66,7 @@
   color: #4a4a4a;
   font-family: "Poppins",sans-serif;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 3.1rem;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 60px;
@@ -132,4 +132,23 @@
     -webkit-transform: translateY(-400%);
     transform: translateY(-400%);
   }
+}
+
+
+
+@media (max-width: 767px) {
+  .loader {
+    height: auto;
+    width: auto;
+    font-size: 1.5em;
+  }
+  .stackContainer > span > img {
+    height: 4em;
+    width: 4em;
+}
+
+.word {
+  height: 50vh;
+}
+ 
 }

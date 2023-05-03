@@ -87,3 +87,12 @@
       opacity: 0;
     }
   }
+
+
+  /* @media (max-width: 767px) {
+    .contactContainer {
+      height: auto;
+      width: auto;
+    }
+    
+  } */

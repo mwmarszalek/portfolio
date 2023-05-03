@@ -122,8 +122,7 @@ const ProjectsElement2 = ({ projects }) => {
 
   return (
     <div
-      className="d-flex flex-wrap justify-content-center align-items-center projectContainer"
-      style={{ height: "100vh", overflow: "auto", paddingTop: '5vh' }}
+      className={styles.projectContainer}
     >
       <div className="d-flex flex-wrap justify-content-around">
         {projects.map((project) => (
