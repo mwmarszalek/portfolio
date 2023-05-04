@@ -19,7 +19,10 @@ const Home = () => {
 
   useEffect(() => {
     if (!firstLoad && aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: "smooth" });
+      // Check if the user is not on a mobile device
+      if (window.innerWidth > 768) {
+        aboutRef.current.scrollIntoView({ behavior: "smooth" });
+      }
     }
   }, [firstLoad]);
 

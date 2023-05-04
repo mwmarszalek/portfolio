@@ -92,6 +92,8 @@
   @media (max-width: 767px) {
     .contactContainer {
     font-size: .90rem;
+    margin-left: .6em;
+    margin-right: .6em;
     
     }
     
