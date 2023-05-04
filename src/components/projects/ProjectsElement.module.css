@@ -2,8 +2,33 @@
   height: 100vh;
   overflow: auto;
   padding-top: 12vh;
+
 }
 
+.card {
+  background-color: yellow;
+  width: 22rem;
+  background-color: #212529;
+  color: white;
+  border-radius: 5%;
+  border-color: purple;
+  box-shadow: 0 0 8px 3px rgba(186, 85, 211, 0.5);
+            
+}
+
+
+.card:hover {
+  box-shadow: 0 0 10px 5px rgba(186, 85, 211, 1);
+}
+
+
+.projectImage {
+  height: 30vh;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 
 .buttonCode {
   display: flex;
@@ -42,6 +67,10 @@
     height: auto;
     width: auto;
     padding-top: 3vh;
+    
   }
-  
+  .card {
+    height: 100%;
+    margin-bottom: 2rem;
+  }
 }

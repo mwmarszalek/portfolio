@@ -35,31 +35,31 @@ const ProjectsElement2 = ({ projects }) => {
     >
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />{" "}
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />
     </span>
   );
@@ -75,27 +75,27 @@ const ProjectsElement2 = ({ projects }) => {
     >
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />{" "}
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />
     </span>
   );
@@ -111,23 +111,23 @@ const ProjectsElement2 = ({ projects }) => {
     >
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://user-images.githubusercontent.com/108957679/221864279-fa907251-bad8-465a-b682-537dc92940dc.png"
-        height="25px"
+        height="30px"
       />{" "}
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-        height="25px"
+        height="30px"
       />
     </span>
   );
@@ -141,19 +141,15 @@ const ProjectsElement2 = ({ projects }) => {
         {projects.map((project) => (
           <Card
             key={project.id}
-            className="mb-4"
-            style={{
-              width: "22.5rem",
-              backgroundColor: "#212529",
-              color: "white",
-            }}
+            className={styles.card}
+
           >
             {project.name === "macrOS" ? (
               <a href={project.videoUrl} target="_blank">
                 <Card.Img
                   variant="top"
                   src={macrosImage}
-                  style={{ height: "30vh" }}
+                  className={styles.projectImage}
                 />
               </a>
             ) : project.name === "beeCareful" ? (
@@ -161,7 +157,7 @@ const ProjectsElement2 = ({ projects }) => {
                 <Card.Img
                   variant="top"
                   src={beeImage}
-                  style={{ height: "30vh" }}
+                  className={styles.projectImage}
                 />
               </a>
             ) : project.name === "Earth Trekker" ? (
@@ -169,7 +165,8 @@ const ProjectsElement2 = ({ projects }) => {
                 <Card.Img
                   variant="top"
                   src={earthImage}
-                  style={{ height: "30vh" }}
+                  className={styles.projectImage}
+                  style = {{borderTopLeftRadius: '3%', borderTopRightRadius: '3%'}}
                 />
               </a>
             ) : (
@@ -201,7 +198,7 @@ const ProjectsElement2 = ({ projects }) => {
                 <div style={{ fontSize: ".8rem" }}>{project.description}</div>
 
                 {project.name === "macrOS" ? (
-                  <div style={{ paddingBottom: "1rem" }}>{macrosStack}</div>
+                  <div style={{ paddingBottom: ".8rem" }}>{macrosStack}</div>
                 ) : project.name === "beeCareful" ? (
                   <div style={{ paddingBottom: "2rem" }}>{beecarefulStack}</div>
                 ) : project.name === "Earth Trekker" ? (
