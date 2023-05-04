@@ -142,7 +142,7 @@ const ProjectsElement2 = ({ projects }) => {
           <Card
             key={project.id}
             className={styles.card}
-
+            style={{backgroundColor: '#212529'}}
           >
             {project.name === "macrOS" ? (
               <a href={project.videoUrl} target="_blank">
