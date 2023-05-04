@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logoBig.png";
 import { Navbar, Nav } from "react-bootstrap";
+import './NavBar3.css'
 
 const navbarLinksStyle = {
   fontSize: "1.5rem",
@@ -65,13 +66,13 @@ const NavBar = ({
             marginTop: "-3rem",
           }}
           className="d-inline-block align-top"
-          alt="React Bootstrap logo"
+          alt="logo"
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav">
       
       </Navbar.Toggle>
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse id="basic-navbar-nav" >
         <Nav className="ms-auto" style={navbarLinksStyle}>
           <Nav.Link
             onClick={() => {

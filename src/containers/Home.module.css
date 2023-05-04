@@ -23,10 +23,11 @@
 }
 
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .main {
-    
-    /* background: transparent url("../assets/bg1 copy.png") no-repeat scroll 0% 0% / cover; */
-    background-attachment: initial;
+    background-image: url("../assets/bg1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
   }
-}
+} */

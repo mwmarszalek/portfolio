@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -8,6 +8,22 @@ import earthImage from "../../assets/earthTrekkerTitlePlay.jpeg";
 import styles from "./ProjectsElement.module.css";
 
 const ProjectsElement2 = ({ projects }) => {
+
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767)
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const macrosStack = (
     <span
       style={{
@@ -117,8 +133,10 @@ const ProjectsElement2 = ({ projects }) => {
   );
 
   return (
+
+
     <div className={styles.projectContainer}>
-      {/* <h1 style={{fontWeight: 'bolder', fontSize: '45px',textAlign: 'center',textDecoration: 'underline'}}>my work:</h1> */}
+      {isMobile ? <h1 style={{fontWeight: 'bolder', fontSize: '45px',textAlign: 'center',textDecoration: 'underline'}}>my work:</h1> : <></> }
       <div className="d-flex flex-wrap justify-content-around">
         {projects.map((project) => (
           <Card

@@ -1,3 +1,9 @@
+.projectContainer {
+  height: 100vh;
+  overflow: auto;
+  padding-top: 12vh;
+}
+
 
 .buttonCode {
   display: flex;
@@ -28,17 +34,14 @@
   transition: transform 0.2s ease-in;
 }
 
-.projectContainer {
-  height: 100vh;
-  overflow: auto;
-  padding-top: 12vh;
-}
+
 
 
 @media (max-width: 767px) {
   .projectContainer {
     height: auto;
     width: auto;
+    padding-top: 3vh;
   }
   
 }
