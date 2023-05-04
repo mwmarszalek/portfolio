@@ -136,7 +136,7 @@ const ProjectsElement2 = ({ projects }) => {
 
 
     <div className={styles.projectContainer}>
-      {isMobile ? <h1 style={{fontWeight: 'bolder', fontSize: '45px',textAlign: 'center',textDecoration: 'underline'}}>my work:</h1> : <></> }
+      {isMobile ? <h1 style={{fontWeight: 'bolder', fontSize: '45px',textAlign: 'center',textDecoration: 'underline',paddingBottom:'3vh'}}>my work:</h1> : <></> }
       <div className="d-flex flex-wrap justify-content-around">
         {projects.map((project) => (
           <Card

@@ -3,15 +3,6 @@ import logo from "../assets/logoBig.png";
 import { Navbar, Nav } from "react-bootstrap";
 import  "./NavBar3.css";
 
-const navbarLinksStyle = {
-  fontSize: "1.5rem",
-  fontWeight: "bold",
-  marginRight: "1em",
-  display: "flex",
-  gap: "1em",
-};
-
-
 const NavBar = ({
   scrollToAbout,
   scrollToProjects,
@@ -78,7 +69,7 @@ const NavBar = ({
           alt="logo"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar} />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor: 'purple',opacity: '0.3'}} onClick={toggleNavbar} />
 
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={`ms-auto navBarLinksStyle`}>
