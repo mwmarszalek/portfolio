@@ -143,10 +143,9 @@ const ProjectsElement2 = ({ projects }) => {
             key={project.id}
             className="mb-4"
             style={{
-              width: "20rem",
+              width: "22.5rem",
               backgroundColor: "#212529",
               color: "white",
-              margin: "1em",
             }}
           >
             {project.name === "macrOS" ? (
