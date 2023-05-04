@@ -1,8 +1,10 @@
+.navbar-collapse  {
+}
+
+
 @media (max-width: 767px) {
     .logo {
         padding-top: 2.5vh;
     }
-    
-    
-  }
-  
+
+}

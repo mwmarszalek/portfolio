@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logoBig.png";
 import { Navbar, Nav } from "react-bootstrap";
-import  styles from "./NavBar3.css";
+import  "./NavBar3.css";
 
 const navbarLinksStyle = {
   fontSize: "1.5rem",
@@ -10,6 +10,9 @@ const navbarLinksStyle = {
   display: "flex",
   gap: "1em",
 };
+
+
+
 
 const NavBar = ({
   scrollToAbout,
@@ -20,6 +23,7 @@ const NavBar = ({
   const [isTransparent, setIsTransparent] = useState(true);
   const [activeLink, setActiveLink] = useState("");
   const [isCollapsed, setIsCollapsed] = useState(true); // Add state for collapse
+  const [expandedNav, setExpandedNav] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,7 +49,9 @@ const NavBar = ({
     setIsCollapsed(true); 
   };
 
-  const toggleNavbar = () => setIsCollapsed(!isCollapsed);
+  const toggleNavbar = () => {setIsCollapsed(!isCollapsed) }
+    
+  
 
   return (
     <Navbar
@@ -53,13 +59,15 @@ const NavBar = ({
       variant="dark"
       sticky="top"
       expand="md"
-      data-bs-toggle="collapse"
       expanded={!isCollapsed}
       style={{
         transition: "background-color 0.3s ease-in-out",
         backgroundColor: isTransparent ? "#8B048Bcc" : "transparent",
         opacity: isTransparent ? 0.9 : 1,
         height: "10vh",
+      }}
+      onToggle={() => {
+        setExpandedNav(true)
       }}
     >
       <Navbar.Brand href="/"  style={{ maxHeight: "8vh" }}>
