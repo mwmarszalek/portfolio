@@ -39,6 +39,7 @@
   border-radius: 50%;
   border-right-color: #299fff;
   animation: tri-spinner 1s infinite linear;
+  margin-top: 10vh;
 }
 
 .spinner::before,
