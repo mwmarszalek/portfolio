@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logoBig.png";
 import { Navbar, Nav } from "react-bootstrap";
-import "./NavBar3.css";
+import  styles from "./NavBar3.css";
 
 const navbarLinksStyle = {
   fontSize: "1.5rem",
@@ -42,7 +42,7 @@ const NavBar = ({
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    setIsCollapsed(true); // Collapse the navbar on link click
+    setIsCollapsed(true); 
   };
 
   const toggleNavbar = () => setIsCollapsed(!isCollapsed);
@@ -62,16 +62,16 @@ const NavBar = ({
         height: "10vh",
       }}
     >
-      <Navbar.Brand href="/" style={{ maxHeight: "8vh" }}>
+      <Navbar.Brand href="/"  style={{ maxHeight: "8vh" }}>
         <img
           src={logo}
           style={{
             width: "8rem",
             height: "8rem",
             objectFit: "cover",
-            marginTop: "-3rem",
+            marginTop: "-2.7rem",
           }}
-          className="d-inline-block align-top"
+          className="logo"
           alt="logo"
         />
       </Navbar.Brand>
