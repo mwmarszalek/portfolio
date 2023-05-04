@@ -12,8 +12,6 @@ const navbarLinksStyle = {
 };
 
 
-
-
 const NavBar = ({
   scrollToAbout,
   scrollToProjects,
@@ -23,7 +21,7 @@ const NavBar = ({
   const [isTransparent, setIsTransparent] = useState(true);
   const [activeLink, setActiveLink] = useState("");
   const [isCollapsed, setIsCollapsed] = useState(true); // Add state for collapse
-  const [expandedNav, setExpandedNav] = useState(false)
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,9 +64,6 @@ const NavBar = ({
         opacity: isTransparent ? 0.9 : 1,
         height: "10vh",
       }}
-      onToggle={() => {
-        setExpandedNav(true)
-      }}
     >
       <Navbar.Brand href="/"  style={{ maxHeight: "8vh" }}>
         <img
@@ -86,7 +81,7 @@ const NavBar = ({
       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar} />
 
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto" style={navbarLinksStyle}>
+        <Nav className={`ms-auto navBarLinksStyle`}>
           <Nav.Link
             onClick={() => {
               handleLinkClick("about");
