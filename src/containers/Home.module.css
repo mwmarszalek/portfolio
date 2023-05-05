@@ -23,11 +23,16 @@
 }
 
 
-/* @media (max-width: 767px) {
-  .main {
-    background-image: url("../assets/bg1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: auto;
+@media (max-width: 767px) {
+
+  .containerIphoneFix {
+    position: absolute;
   }
-} */
+
+  .main {
+    background-image: url("../assets/bg1 copy.png");
+   background-repeat: repeat;
+   background-position: center;
+
+  }
+}
