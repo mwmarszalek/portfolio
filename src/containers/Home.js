@@ -37,7 +37,7 @@ const Home = () => {
   const contactRef = useRef(null);
 
   return (
-  
+    <div className="heroContainer">
     <div className={firstLoad ? `${styles.hello}` : `${styles.main}`}>
       {firstLoad && <Hello onClick={handleClick} />}
       {!firstLoad && (
@@ -61,7 +61,9 @@ const Home = () => {
             <Contact />
           </div>
         </div>
+       
       )}
+       </div>
     </div>
 
   );

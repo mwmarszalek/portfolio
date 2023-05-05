@@ -26,11 +26,9 @@
  @media (max-width: 767px) {
 
 
-
-
   .main {
    background-attachment: initial;  
-   background-image: url("../assets/bg1.png") center top no-repeat scroll;
+   background-image: url("../assets/bg1 copy.png") center top no-repeat scroll;
    background-size: 100vh;
     }
 
