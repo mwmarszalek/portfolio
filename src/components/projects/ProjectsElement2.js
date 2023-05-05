@@ -1,17 +1,14 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import macrosImage from "../../assets/macrosTitlePlay.jpeg";
-import beeImage from '../../assets/beeCarefulTitlePlay.jpeg';
+import beeImage from "../../assets/beeCarefulTitlePlay.jpeg";
 import earthImage from "../../assets/earthTrekkerTitlePlay.jpeg";
 import styles from "./ProjectsElement.module.css";
 
 const ProjectsElement2 = ({ projects }) => {
-
-
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767)
-
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
 
   useEffect(() => {
     const handleResize = () => {
@@ -35,31 +32,31 @@ const ProjectsElement2 = ({ projects }) => {
     >
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />{" "}
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
     </span>
   );
@@ -75,27 +72,27 @@ const ProjectsElement2 = ({ projects }) => {
     >
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />{" "}
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
     </span>
   );
@@ -111,38 +108,36 @@ const ProjectsElement2 = ({ projects }) => {
     >
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://user-images.githubusercontent.com/108957679/221864279-fa907251-bad8-465a-b682-537dc92940dc.png"
-        height="30px"
+        className={styles.projectsImg}
       />{" "}
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
       <img
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-        height="30px"
+        className={styles.projectsImg}
       />
     </span>
   );
 
   return (
-
-
     <div className={styles.projectContainer}>
-      {isMobile ? <h1 style={{fontWeight: 'bolder', fontSize: '45px',textAlign: 'center',textDecoration: 'underline',paddingBottom:'3vh'}}>my work:</h1> : <></> }
+      {isMobile ? <h1 className={styles.projectsTitle}>my work:</h1> : <></>}
       <div className="d-flex flex-wrap justify-content-around">
         {projects.map((project) => (
           <Card
             key={project.id}
             className={styles.card}
-            style={{backgroundColor: '#212529'}}
+            style={{ backgroundColor: "#212529" }}
           >
             {project.name === "macrOS" ? (
               <a href={project.videoUrl} target="_blank">
@@ -158,7 +153,6 @@ const ProjectsElement2 = ({ projects }) => {
                   variant="top"
                   src={beeImage}
                   className={styles.projectImage}
-               
                 />
               </a>
             ) : project.name === "Earth Trekker" ? (
@@ -167,7 +161,10 @@ const ProjectsElement2 = ({ projects }) => {
                   variant="top"
                   src={earthImage}
                   className={styles.projectImage}
-                  style = {{borderTopLeftRadius: '3%', borderTopRightRadius: '3%'}}
+                  style={{
+                    borderTopLeftRadius: "3%",
+                    borderTopRightRadius: "3%",
+                  }}
                 />
               </a>
             ) : (

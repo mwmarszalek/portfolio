@@ -39,7 +39,7 @@
   border-radius: 50%;
   border-right-color: #299fff;
   animation: tri-spinner 1s infinite linear;
-  margin-top: 10vh;
+  margin-top: 2vh;
 }
 
 .spinner::before,
@@ -139,11 +139,14 @@
 
 @media (max-width: 767px) {
   .stackContainer > span > img {
-    height: 2.5em;
-    width: 2.5em;
+    height: 3em;
+    width: 3em;
 }
 
-
-
+.stackContainer {
+  height: auto;
+  padding-top: 1vh;
+  padding-bottom: 0;
+}
  
 }

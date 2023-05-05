@@ -77,7 +77,7 @@ const NavBar = ({
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={`ms-auto navBarLinksStyle`}>
           <Nav.Link
-          href="/#about"
+         
             onClick={() => {
               handleLinkClick("about");
               scrollToAbout();
@@ -87,7 +87,7 @@ const NavBar = ({
             about
           </Nav.Link>
           <Nav.Link
-          href="/#projects"
+          
             onClick={() => {
               handleLinkClick("projects");
               scrollToProjects();
@@ -97,7 +97,7 @@ const NavBar = ({
             projects
           </Nav.Link>
           <Nav.Link
-          href="/#stack"
+   
             onClick={() => {
               handleLinkClick("stack");
               scrollToStack();
@@ -107,7 +107,7 @@ const NavBar = ({
             stack
           </Nav.Link>
           <Nav.Link
-          href="/#contact"
+   
             onClick={() => {
               handleLinkClick("contact");
               scrollToContact();

@@ -25,6 +25,19 @@
 }
 
 
+.projectsTitle {
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 3vh;
+}
+
+
+.projectsImg {
+  height: 2.15em;
+}
+
 .card:hover {
   box-shadow: 0 0 10px 5px rgba(186, 85, 211, 1);
 }
@@ -46,6 +59,7 @@
   font-size: 1.2rem;
   transform: translateY(0);
   transition: transform 0.2s ease-out;
+  position: sticky;
 }
 
 .button {
@@ -80,5 +94,9 @@
   .card {
     height: 100%;
     margin-bottom: 2rem;
+  }
+
+  .projectsTitle {
+    padding-top: 4vh;
   }
 }
