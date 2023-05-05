@@ -139,13 +139,13 @@
 
 @media (max-width: 767px) {
   .stackContainer > span > img {
-    height: 3em;
-    width: 3em;
+    height: 3.5em;
+    width: 3.5em;
 }
 
 .stackContainer {
   height: auto;
-  padding-top: 1vh;
+  padding-top: 8vh;
   padding-bottom: 0;
 }
  

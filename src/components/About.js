@@ -1,5 +1,4 @@
-import React from "react";
-import { Card, Container } from "react-bootstrap";
+import React, {useEffect} from "react";
 import styles from "./About.module.css";
 import picture1 from "../assets/codeImage1.svg";
 import picture2 from "../assets/codeImage2.svg";
@@ -8,14 +7,22 @@ import picture4 from "../assets/codeImage4.svg";
 
 const About = () => {
 
+
+  useEffect(() => {
+    const images = document.querySelectorAll(".glow-on-mount");
+    images.forEach((img) => {
+      img.classList.add("glow");
+    });
+  }, []);
+
   
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.pictureContainer}>
-        <img src={picture1} style={{height: '10vh', width: '10em'}} />
-        <img src={picture2} style={{height: '10vh', width: '10em'}} />
-        <img src={picture3} style={{height: '10vh', width: '10em'}} />
-        {/* <img src={picture4} style={{height: '10vh', width: '10em'}} /> */}
+      <img src={picture1} style={{height: '10vh', width: '10em', animation: `${styles.vibrate} 1.5s ease-in-out`}} />
+<img src={picture2} style={{height: '10vh', width: '10em', animation: `${styles.vibrate} 1.5s ease-in-out 0.25s`}} />
+<img src={picture3} style={{height: '10vh', width: '10em', animation: `${styles.vibrate} 1.5s ease-in-out 0.5s`}} />
+
       </div>
       <div className={styles.bioCard}>
         <h1>Hey, I'm Michal! ✌️</h1>
