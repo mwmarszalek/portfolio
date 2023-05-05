@@ -25,14 +25,16 @@
 
 @media (max-width: 767px) {
 
-  .containerIphoneFix {
-    position: absolute;
-  }
-
   .main {
     background-image: url("../assets/bg1 copy.png");
-   background-repeat: repeat;
-   background-position: center;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+   
 
   }
 }
