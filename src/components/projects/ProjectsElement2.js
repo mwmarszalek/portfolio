@@ -158,6 +158,7 @@ const ProjectsElement2 = ({ projects }) => {
                   variant="top"
                   src={beeImage}
                   className={styles.projectImage}
+               
                 />
               </a>
             ) : project.name === "Earth Trekker" ? (

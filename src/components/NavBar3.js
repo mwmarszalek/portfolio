@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logoBig.png";
+
+
 import { Navbar, Nav } from "react-bootstrap";
 import  "./NavBar3.css";
 
@@ -11,7 +13,8 @@ const NavBar = ({
 }) => {
   const [isTransparent, setIsTransparent] = useState(true);
   const [activeLink, setActiveLink] = useState("");
-  const [isCollapsed, setIsCollapsed] = useState(true); // Add state for collapse
+  const [isCollapsed, setIsCollapsed] = useState(true); 
+
 
 
   useEffect(() => {
@@ -74,6 +77,7 @@ const NavBar = ({
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={`ms-auto navBarLinksStyle`}>
           <Nav.Link
+          href="/#about"
             onClick={() => {
               handleLinkClick("about");
               scrollToAbout();
@@ -83,6 +87,7 @@ const NavBar = ({
             about
           </Nav.Link>
           <Nav.Link
+          href="/#projects"
             onClick={() => {
               handleLinkClick("projects");
               scrollToProjects();
@@ -92,6 +97,7 @@ const NavBar = ({
             projects
           </Nav.Link>
           <Nav.Link
+          href="/#stack"
             onClick={() => {
               handleLinkClick("stack");
               scrollToStack();
@@ -101,6 +107,7 @@ const NavBar = ({
             stack
           </Nav.Link>
           <Nav.Link
+          href="/#contact"
             onClick={() => {
               handleLinkClick("contact");
               scrollToContact();
