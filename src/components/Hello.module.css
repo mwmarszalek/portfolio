@@ -70,14 +70,14 @@
 
 
 @media (max-width: 767px) {
-  .typed {
 
-  /* padding-left: .1em;
-  padding-right: .1em; */
+  .typed {
+    margin-top: 0;
   }
 
   .btnHello {
     margin-top: 4em;
+    position: absolute;
   }
 }
 
