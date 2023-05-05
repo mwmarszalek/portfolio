@@ -69,7 +69,7 @@ const NavBar = ({
           alt="logo"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor: 'purple',opacity: '0.3'}} onClick={toggleNavbar} />
+      <Navbar.Toggle aria-controls="basic-navbar-nav"  onClick={toggleNavbar} />
 
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={`ms-auto navBarLinksStyle`}>
