@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logoBig.png";
 
-
 import { Navbar, Nav } from "react-bootstrap";
-import  "./NavBar3.css";
+import "./NavBar3.css";
 
 const NavBar = ({
   scrollToAbout,
@@ -13,9 +12,7 @@ const NavBar = ({
 }) => {
   const [isTransparent, setIsTransparent] = useState(true);
   const [activeLink, setActiveLink] = useState("");
-  const [isCollapsed, setIsCollapsed] = useState(true); 
-
-
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,12 +35,12 @@ const NavBar = ({
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    setIsCollapsed(true); 
+    setIsCollapsed(true);
   };
 
-  const toggleNavbar = () => {setIsCollapsed(!isCollapsed) }
-    
-  
+  const toggleNavbar = () => {
+    setIsCollapsed(!isCollapsed);
+  };
 
   return (
     <Navbar
@@ -59,7 +56,7 @@ const NavBar = ({
         height: "10vh",
       }}
     >
-      <Navbar.Brand href="/"  style={{ maxHeight: "8vh" }}>
+      <Navbar.Brand href="/" style={{ maxHeight: "8vh" }}>
         <img
           src={logo}
           style={{
@@ -72,12 +69,11 @@ const NavBar = ({
           alt="logo"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav"  onClick={toggleNavbar} />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar} />
 
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={`ms-auto navBarLinksStyle`}>
           <Nav.Link
-         
             onClick={() => {
               handleLinkClick("about");
               scrollToAbout();
@@ -87,7 +83,6 @@ const NavBar = ({
             about
           </Nav.Link>
           <Nav.Link
-          
             onClick={() => {
               handleLinkClick("projects");
               scrollToProjects();
@@ -97,7 +92,6 @@ const NavBar = ({
             projects
           </Nav.Link>
           <Nav.Link
-   
             onClick={() => {
               handleLinkClick("stack");
               scrollToStack();
@@ -107,7 +101,6 @@ const NavBar = ({
             stack
           </Nav.Link>
           <Nav.Link
-   
             onClick={() => {
               handleLinkClick("contact");
               scrollToContact();
@@ -115,6 +108,13 @@ const NavBar = ({
             className={activeLink === "contact" ? "active" : ""}
           >
             contact
+          </Nav.Link>
+          <Nav.Link
+            href={require("../assets/cvMichalMarszalek.pdf")}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            resume<span style={{fontSize: '0.6rem'}}> (download)</span>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
