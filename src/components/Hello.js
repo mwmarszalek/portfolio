@@ -11,7 +11,7 @@ const Hello = ({ onClick }) => {
     const typed = new Typed(greeting.current, {
       strings: [
         `<b>Hello, I'm Michal :-) &#128075;</b><br /><b>Software Developer &nbsp &#128187;</b>`,
-        // `<b>Make yourself at home &#129299;</b>`,
+     
       ],
       typeSpeed: 50,
       onComplete: () => {
@@ -32,7 +32,7 @@ const Hello = ({ onClick }) => {
 
   return (
     <div className={styles.hello}>
-      <img style={{ width: "15rem", height: "15rem" }} src={logoBig} />
+      <img className={styles.helloImg} src={logoBig} />
       <div className={styles.typed}>
         <span ref={greeting} />
       </div>
