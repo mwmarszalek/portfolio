@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.991bb3e9.css",
-    "main.js": "/static/js/main.ba587c5b.js",
+    "main.css": "/static/css/main.008c0d84.css",
+    "main.js": "/static/js/main.7a36ff76.js",
     "static/js/787.dbbd0357.chunk.js": "/static/js/787.dbbd0357.chunk.js",
     "static/media/bg1.png": "/static/media/bg1.082c1b70387adbc96b4c.png",
     "static/media/bg1 copy.png": "/static/media/bg1 copy.5f4454b92585ca128f7e.png",
+    "static/media/cvMichalMarszalek.pdf": "/static/media/cvMichalMarszalek.414813353aa7d24bdb89.pdf",
     "static/media/earthTrekkerTitlePlay.jpeg": "/static/media/earthTrekkerTitlePlay.45644989889687fee353.jpeg",
     "static/media/beeCarefulTitlePlay.jpeg": "/static/media/beeCarefulTitlePlay.9af822f5b9914c500257.jpeg",
     "static/media/macrosTitlePlay.jpeg": "/static/media/macrosTitlePlay.c077667d7247f942dd93.jpeg",
@@ -15,12 +16,12 @@
     "static/media/codeImage3.svg": "/static/media/codeImage3.f08c51d7694169416f3e7e66d87024b6.svg",
     "static/media/codeImage4.svg": "/static/media/codeImage4.b7a40056e38f9e0b0ec800dd0e5579e6.svg",
     "index.html": "/index.html",
-    "main.991bb3e9.css.map": "/static/css/main.991bb3e9.css.map",
-    "main.ba587c5b.js.map": "/static/js/main.ba587c5b.js.map",
+    "main.008c0d84.css.map": "/static/css/main.008c0d84.css.map",
+    "main.7a36ff76.js.map": "/static/js/main.7a36ff76.js.map",
     "787.dbbd0357.chunk.js.map": "/static/js/787.dbbd0357.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.991bb3e9.css",
-    "static/js/main.ba587c5b.js"
+    "static/css/main.008c0d84.css",
+    "static/js/main.7a36ff76.js"
   ]
 }
