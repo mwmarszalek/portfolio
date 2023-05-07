@@ -42,6 +42,11 @@ const NavBar = ({
     setIsCollapsed(!isCollapsed);
   };
 
+  const handleResumeClick = () => {
+    window.open(require("../assets/cvMichalMarszalek.pdf"), "_blank");
+    setActiveLink("");
+  };
+
   return (
     <Navbar
       className={isTransparent ? "navbar-transparent" : ""}
@@ -110,11 +115,10 @@ const NavBar = ({
             contact
           </Nav.Link>
           <Nav.Link
-            href={require("../assets/cvMichalMarszalek.pdf")}
-            target="_blank"
-            rel="noopener noreferrer"
+            onClick={handleResumeClick}
+            className={activeLink === "resume" ? "active" : ""}
           >
-            resume<span style={{fontSize: '0.6rem'}}> (download)</span>
+            resumé
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
